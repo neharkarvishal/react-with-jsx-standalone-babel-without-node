@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>React with JSX and Standalone Babel without Nodejs Environment</title>
+  <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+
+  <div>
+    <div id="root">
+    </div>
+
+    Using Babel <strong id="version"></strong>:
+    <pre id="output">Loading...</pre>
+
+    <script type="text/babel">
+
+      const explode = [ 2, 3, 4];
+      const ES6 = [ 5, 6, 7, ...explode];     // Demonstrating ES6 syntax
+      console.log(temp);
+      var dateFields = [1970, 0, 1];  // 1 Jan 1970
+      var d = new Date(...dateFields);
+      console.log(d);
+
+      const doStuff = () => {
+      const name = 'world';
+      document.getElementById('output').innerHTML = `Hello ${name}`;
+      document.getElementById('version').innerHTML = Babel.version;
+    };
+    doStuff();
+
+    const root = () => {
+    return (
+    <div><h1>Welcome to React</h1></div>
+    );
+  }
+
+  ReactDOM.render(<root />, document.getElementById('root'));
+</script>
+
+</div>
+<footer>
+  <div class="row">
+  </div>
+</footer>
+</body>
+</html>
